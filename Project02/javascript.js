@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
   };
 document.querySelector("#new-task").onsubmit = () => {
   const li = document.createElement('li');
-  line.innerHTML = document.querySelector('#task').value;
+  li.innerHTML = document.querySelector('#task').value;
   document.querySelector('#tasks-list').append(li);
   document.querySelector('#task').value = '';
   document.querySelector('#submit').disabled = true;
-  return false; // why do i gotta return false?
+  return false;
 };
 
 });
