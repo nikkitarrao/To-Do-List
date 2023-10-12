@@ -9,8 +9,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
       else
         document.querySelector('#submit').disabled = true;
   };
+  
 document.querySelector("#new-task").onsubmit = () => {
   const li = document.createElement('li');
+  let task_text = document.querySelector('#task').value;
+  let new_task_html = 
   li.innerHTML = document.querySelector('#task').value;
   document.querySelector('#tasks-list').append(li);
   document.querySelector('#task').value = '';
