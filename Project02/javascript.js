@@ -5,7 +5,7 @@ function click(){
 document.querySelector("#new-task").onsubmit = () => {
   const li = document.createElement('li');
   line.innerHTML = document.querySelector('#task').value;
-  document.querySelector('#tasks_list').append(li);
+  document.querySelector('#tasks-list').append(li);
   
 }
 
