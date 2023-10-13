@@ -1,6 +1,6 @@
 var arrayOfTasks = [];
 
-document.addEventListener('DOMContentLoaded', ()=> {
+document.addEventListener('DOMContentLoaded', function( {
   
   document.querySelector('#submit').disabled = true;
   document.querySelector('#task').onkeyup = () => {
