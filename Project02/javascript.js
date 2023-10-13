@@ -33,6 +33,6 @@ document.querySelector("#new-task").onsubmit = () => {
     if(element.className == 'levelOfCompletion'){
           element.parentElement.style.textDecoration: 'line-through';
       }
-  }
+  })
 
 });
