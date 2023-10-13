@@ -17,7 +17,7 @@ document.querySelector("#new-task").onsubmit = () => {
     <button class = "remove" > remove task from list </button>
     <button class = "levelOfCompletion" > change completion status </button>`;
   
-  li.innerHTML = new_task_html;
+  li.innerHTML = new_task_html
   document.querySelector('#tasks-list').append(li);
   document.querySelector('#task').value = '';
   document.querySelector('#submit').disabled = true;
