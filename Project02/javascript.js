@@ -27,10 +27,10 @@ document.querySelector("#new-task").onsubmit = () => {
 
   document.addEventListener('click', function(event){
     element = event.target;
-      if(element.className == 'remove'){
+      if(element.className === 'remove'){
           element.parentElement.remove();
       }
-    if(element.className == 'levelOfCompletion'){
+    if(element.className === 'levelOfCompletion'){
           element.parentElement.style.textDecoration: 'line-through';
       }
   })
