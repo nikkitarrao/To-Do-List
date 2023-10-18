@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const li = document.createElement('li');
   //  let taskText = document.querySelector('#task').value;
    // let newTaskHTML = ` `<span> ${taskText} </span>
-   // <button class = "remove" > remove task from list </button> `;
+   // <button class = "remove" > remove task from list </button>
+    //<button class = "levelOfCompletion" > change completion status </button`;
    // li.innerHTML = newTaskHTML;
 
      li.innerHTML = document.querySelector('#task').value;
@@ -28,6 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
     element = event.target;
       if(element.className === 'remove'){
           element.parentElement.remove();
+      }
+      if(element.className === 'levelOfCompletion'){
+          element.parentElement.style.textDecoration: 'line-through';
       }
   })
 
