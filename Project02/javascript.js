@@ -16,18 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
     let newTaskHTML = ` <button class = "remove" > remove task from list </button> `;
     li.innerHTML = newTaskHTML;
 
-
-    
    // li.innerHTML = document.querySelector('#task').value;
    // document.querySelector('#tasks-list').append(li);
    // document.querySelector('#task').value = '';
-    return false;
-
-    
-    
+    return false;  
   }
 
-
+//removing an item from the list
+  document.addEventListener('click', function(event){
+    element = event.target;
+      if(element.className === 'remove'){
+          element.parentElement.remove();
+      }
+  })
 
 
   
