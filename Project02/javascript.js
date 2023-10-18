@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
     li.innerHTML = document.querySelector('#task').value;
     document.querySelector('#tasks-list').append(li);
     document.querySelector('#task').value = '';
+    return false;
+
+    
     
   }
 
