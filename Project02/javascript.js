@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#new-task").onsubmit = () => {
     const li = document.createElement('li');
     let taskText = document.querySelector('#task').value;
-
+    let newTaskHTML = ` <button class = "remove" > remove task from list </button> `;
+    li.innerHTML = newTaskHTML;
 
 
     
