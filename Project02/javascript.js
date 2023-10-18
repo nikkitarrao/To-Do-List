@@ -9,6 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('#submit').disabled = true;
   };
 
+  //adding a task to the list
+  document.querySelector("#new-task").onsubmit = () => {
+    const li = document.createElement('li');
+    li.innerHTML = document.querySelector('#task').value;
+    document.querySelector('#tasks-list').append(li);
+    document.querySelector('#task').value = '';
+    
+  }
 
 
 
