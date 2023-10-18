@@ -1,6 +1,6 @@
 var arrayOfTasks = [];
 document.addEventListener('DOMContentLoaded', function() {
-  <!-- Disabling the button unless there is something typed -->
+  //Disabling the button unless there is something typed
   document.querySelector('#submit').disabled = true;
   document.querySelector('#task').onkeyup = () => {
       if(document.querySelector('#task').value.length > 0 )
