@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('click', function(event){
     element = event.target;
       if(element.value === 'completed'){
-         element.getElementById(task).style.textDecoration = "line-through";
+         element.getElementById("task").style.textDecoration = "line-through";
         
       }
   })
