@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let newTaskHTML = `
                       <span> ${taskText} </span>
                       <button class = "remove" > remove task from list </button>
-                      <button class = "levelOfCompletion" > change completion status </button
+                      <button class = "levelOfCompletion" > change completion status </button>
                       `;
     li.innerHTML = newTaskHTML
 
