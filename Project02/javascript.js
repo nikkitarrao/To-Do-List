@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let taskText = document.querySelector('#task').value;
     let taskPriority = document.querySelector('#task-priority').value;
     let newTaskHTML = `
-                      <span> <p>task title: </p> ${taskText} </span>
-                      <span> <p> task priority level: </p> ${taskPriority} </span>
+                      <span> <p>task title: ${ taskText} </p> </span>
+                      <span> <p> task priority level: ${ taskPriority} </p>  </span>
                       <span class = "task-center" >
                       <input type="radio" id="completed" name="task-status" class="completed" value="completed">
                       <label for="comlpleted"> completed </label>
