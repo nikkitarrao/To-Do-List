@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('click', function(event){
     element = event.target;
       if(element.className === 'completed'){
-         element.parentElement.style.textDecoration = "line-through";
+         element.getElementById("task").style.textDecoration = "line-through";
         
       }
      if(element.className === 'pending'){
-         element.parentElement.style.textDecoration = "none";
+         element.getElementById("task").style.textDecoration = "none";
       }
   })
 
