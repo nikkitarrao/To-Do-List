@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let newTaskHTML = `
                       <span> ${taskText} </span>
                       <span class = "task-center" >
-                      <input type="radio" id="completed" name="task-status" value="completed">
+                      <input type="radio" id="completed" name="task-status" class="completed" value="completed">
                       <label for="comlpleted"> completed </label>
                       <input type="radio" id="pending" name="task-status" value="pending">
                       <label for="pending"> pending </label>
@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
 //crossing our completed task
   document.addEventListener('click', function(event){
     element = event.target;
-      if(element.value === 'completed'){
-         element.getElementById("task").style.textDecoration = "line-through";
+      if(element.className === 'completed'){
+         element.parentElement.style.textDecoration = "line-through";
         
       }
   })
