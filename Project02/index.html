@@ -31,11 +31,20 @@
   <h2> <code> TASK LIST </code> </h2>
 
 <!-- Adding tasks to the list -->
-    <ul id = "tasks-list"> </ul> 
-    <form id = "new-task">
+<ul id = "tasks-list"> </ul> 
+    
+ <form id = "new-task">
       <input id = "task" autocomplete = "off" autofocus placeholder = "add a new task here" type = "text">
       <input id = "submit" type = "submit">
-    </form>
+
+<label for="task-priority">Pick task-priority: </label>
+<select name="task-priority" id="task-priority">
+  <option value="low"> low </option>
+  <option value="medium"> medium </option>
+  <option value="high"> high </option>
+</select>
+      
+  </form>
    
 
 <!-- Removing tasks to the list -->
