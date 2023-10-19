@@ -27,9 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 //<button class = "levelOfCompletion" > change completion status </button>
 
-  
-//adding an item to the array
- // arrayOfTasks.push(li); i added this now
 
 //removing an item from the list
  document.addEventListener('click', function(event){
