@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
      arrayOfTasks.push(li);
     return false;  
   }
-//<button class = "levelOfCompletion" > change completion status </button>
+
 
 
 //removing an item from the list
@@ -35,9 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
           element.parentElement.remove();
           arrayOfTasks.splice(li);
       }
-   //   if(element.className === 'levelOfCompletion'){
-   //       element.parentElement.style.textDecoration: 'line-through';
-  //    }
     })
 
 
