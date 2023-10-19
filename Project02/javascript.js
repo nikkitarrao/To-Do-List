@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                       <button class = "remove" > remove task from list </button>
                       `;
     li.innerHTML = newTaskHTML
+    li.id = 'listItem';
 
     // li.innerHTML = document.querySelector('#task').value; can delete cause it is working now
      document.querySelector('#tasks-list').append(li);
@@ -49,11 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('click', function(event){
     element = event.target;
       if(element.className === 'completed'){
-         element.getElementById("task").style.textDecoration = "line-through";
+         element.getElementById("listItem").style.textDecoration = "line-through";
         
       }
      if(element.className === 'pending'){
-         element.getElementById("task").style.textDecoration = "none";
+         element.getElementById("listItem").style.textDecoration = "none";
       }
   })
 
