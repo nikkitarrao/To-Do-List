@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let newTaskHTML = `
                       <span> ${taskText} </span>
                       <button class = "remove" > remove task from list </button>
-                      <button class = "levelOfCompletion" > change completion status </button>
                       `;
     li.innerHTML = newTaskHTML
 
@@ -25,7 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
      document.querySelector('#task').value = '';
     return false;  
   }
+//<button class = "levelOfCompletion" > change completion status </button>
 
+  
 //adding an item to the array
  // arrayOfTasks.push(li);
 
