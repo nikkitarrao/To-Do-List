@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
    element = event.target;
       if(element.className === 'remove'){
           element.parentElement.remove();
-          arrayOfTasks.splice(parentElement); idk how
+          arrayOfTasks.splice(parentElement);
       }
    //   if(element.className === 'levelOfCompletion'){
    //       element.parentElement.style.textDecoration: 'line-through';
