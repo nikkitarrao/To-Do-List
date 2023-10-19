@@ -34,15 +34,24 @@
 <ul id = "tasks-list"> </ul> 
     
  <form id = "new-task">
+   <!-- task-title -->
     <div>  <input id = "task" autocomplete = "off" autofocus placeholder = "add a new task here" type = "text">  </div>
 
+   <!-- task priority -->
 <div> <label for="task-priority">task-priority: </label>
 <select name="task-priority" id="task-priority">
   <option value="low"> low </option>
   <option value="medium"> medium </option>
   <option value="high"> high </option>
   </select> </div>
-  
+
+   <!-- task status -->
+  <div> <p> indicate task status</p>
+  <input type="radio" id="completed" name="task-status" value="completed">
+  <label for="comlpleted"> completed </label><br>
+  <input type="radio" id="pending" name="task-status" value="pending">
+  <label for="pending"> pending </label><br> </div>
+   <br>
   <div> <input id = "submit" type = "submit"> </div>  
   </form>
    
