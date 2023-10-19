@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let newTaskHTML = `
                       <span> ${taskText} </span>
                       <button class = "remove" > remove task from list </button>
-                      <div> <p> indicate task status</p>
+              
                       <input type="radio" id="completed" name="task-status" value="completed">
                       <label for="comlpleted"> completed </label>
                       <input type="radio" id="pending" name="task-status" value="pending">
-                      <label for="pending"> pending </label> </div>
+                      <label for="pending"> pending </label>
                       `;
     li.innerHTML = newTaskHTML
 
