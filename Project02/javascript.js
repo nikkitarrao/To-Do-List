@@ -28,18 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
  // arrayOfTasks.push((li);
 
 //removing an item from the list
-  document.addEventListener('click', function(event){
-    element = event.target;
-      if(element.className === 'remove'){
-          element.parentElement.remove();
+ // document.addEventListener('click', function(event){
+ //   element = event.target;
+  //    if(element.className === 'remove'){
+    //      element.parentElement.remove();
         //  arrayOfTasks.splice(parentElement); idk how
-      }
-      if(element.className === 'levelOfCompletion'){
-          element.parentElement.style.textDecoration: 'line-through';
-      }
+    //  }
+   //   if(element.className === 'levelOfCompletion'){
+   //       element.parentElement.style.textDecoration: 'line-through';
+  //    }
 
     
-  })
+  //})
 
 
   
