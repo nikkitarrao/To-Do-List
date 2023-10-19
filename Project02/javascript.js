@@ -12,20 +12,22 @@ document.addEventListener('DOMContentLoaded', function() {
   //adding a task to the list
   document.querySelector("#new-task").onsubmit = () => {
     const li = document.createElement('li');
-  //  let taskText = document.querySelector('#task').value;
-   // let newTaskHTML = ` `<span> ${taskText} </span>
-   // <button class = "remove" > remove task from list </button>
-    //<button class = "levelOfCompletion" > change completion status </button`;
-   // li.innerHTML = newTaskHTML;
+    let taskText = document.querySelector('#task').value;
+    let newTaskHTML = `
+                      <span> ${taskText} </span>
+                      <button class = "remove" > remove task from list </button>
+                      <button class = "levelOfCompletion" > change completion status </button
+                      `;
+    li.innerHTML = newTaskHTML
 
-     li.innerHTML = document.querySelector('#task').value;
+    // li.innerHTML = document.querySelector('#task').value;
      document.querySelector('#tasks-list').append(li);
      document.querySelector('#task').value = '';
     return false;  
   }
 
 //adding an item to the array
- // arrayOfTasks.push((li);
+ // arrayOfTasks.push(li);
 
 //removing an item from the list
  // document.addEventListener('click', function(event){
