@@ -25,13 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 //adding an item to the array
-  arrayOfTasks.push((li);
+ // arrayOfTasks.push((li);
 
 //removing an item from the list
   document.addEventListener('click', function(event){
     element = event.target;
       if(element.className === 'remove'){
           element.parentElement.remove();
+        //  arrayOfTasks.splice(parentElement); idk how
       }
       if(element.className === 'levelOfCompletion'){
           element.parentElement.style.textDecoration: 'line-through';
