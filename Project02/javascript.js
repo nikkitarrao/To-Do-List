@@ -19,16 +19,17 @@ document.addEventListener('DOMContentLoaded', function() {
                       `;
     li.innerHTML = newTaskHTML
 
-    // li.innerHTML = document.querySelector('#task').value;
+    // li.innerHTML = document.querySelector('#task').value; can delete cause it is working now
      document.querySelector('#tasks-list').append(li);
      document.querySelector('#task').value = '';
+     arrayOfTasks.push(li);
     return false;  
   }
 //<button class = "levelOfCompletion" > change completion status </button>
 
   
 //adding an item to the array
- // arrayOfTasks.push(li);
+ // arrayOfTasks.push(li); i added this now
 
 //removing an item from the list
  // document.addEventListener('click', function(event){
