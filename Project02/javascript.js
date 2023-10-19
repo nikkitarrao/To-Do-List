@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
     return false;  
   }
 
+//adding an item to the array
+  arrayOfTasks.push((li);
+
 //removing an item from the list
   document.addEventListener('click', function(event){
     element = event.target;
@@ -33,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if(element.className === 'levelOfCompletion'){
           element.parentElement.style.textDecoration: 'line-through';
       }
+
+    
   })
 
 
