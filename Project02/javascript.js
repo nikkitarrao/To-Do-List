@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
           arrayOfTasks.splice(li);
       }
     })
-
+//crossing our completed task
   document.addEventListener('click', function(event){
     element = event.target;
       if(element.value === 'completed'){
