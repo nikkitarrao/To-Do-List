@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
                       <span class = "task-center" >
                       <input type="radio" id="completed" name="task-status" class="completed" value="completed">
                       <label for="comlpleted"> completed </label>
-                      <input type="radio" id="pending" name="task-status" value="pending">
+                      <input type="radio" id="pending" name="task-status" value="pending" class="pending">
                       <label for="pending"> pending </label>
                       </span>
 
@@ -49,6 +49,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if(element.className === 'completed'){
          element.parentElement.style.textDecoration = "line-through";
         
+      }
+     if(element.className === 'pending'){
+         element.parentElement.style.textDecoration = "none";
       }
   })
 
