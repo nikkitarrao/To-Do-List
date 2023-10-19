@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let taskText = document.querySelector('#task').value;
     let newTaskHTML = `
                       <span> ${taskText} </span>
-                      <span id = "text-center" >
+                      <span class = "text-center" >
                       <input type="radio" id="completed" name="task-status" value="completed">
                       <label for="comlpleted"> completed </label>
                       <input type="radio" id="pending" name="task-status" value="pending">
