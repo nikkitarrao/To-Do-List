@@ -28,8 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
                       `;
     li.innerHTML = newTaskHTML
     li.id = 'listItem';
-
-    // li.innerHTML = document.querySelector('#task').value; can delete cause it is working now
      document.querySelector('#tasks-list').append(li);
      document.querySelector('#task').value = '';
      arrayOfTasks.push(li);
@@ -47,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     })
 //crossing our completed task
-  document.addEventListener('click', function(event){
+  document.addEventListener('change', function(event){
     element = event.target;
       if(element.className === 'completed'){
          element.innerHTML.style.textDecoration = "line-through";
