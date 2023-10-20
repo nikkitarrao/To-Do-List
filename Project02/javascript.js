@@ -51,15 +51,15 @@ document.addEventListener('DOMContentLoaded', function() {
             //                                                                             )};
    
    
-   //document.addEventListener('change', function(event){
-   // element = event.target;
-    //  if(element.className === 'completed'){
-       //  element.getElementById("task-title").style.textDecoration = "line-through";
-    //  }
-  //   if(element.className === 'pending'){
-      //   element.getElementById("task-title").style.textDecoration = "none";
-   //   }
-//});
+   document.addEventListener("change", function(event){
+     element = event.target;
+      if(element.className === 'completed'){
+         element.getElementById("task-title").style.textDecoration = "line-through";
+      }
+     if(element.className === 'pending'){
+         element.getElementById("task-title").style.textDecoration = "none";
+      }
+})
 
   
 });
