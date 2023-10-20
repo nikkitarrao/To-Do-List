@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     taskText.id = 'task-title';
     let taskPriority = document.querySelector('#task-priority').value;
     let newTaskHTML = `
+                      <br>
                       <span> <p>task title: ${ taskText} </p> </span>
                       <span> <p> task priority level: ${ taskPriority} </p>  </span>
                       <span> <p> task status:
@@ -25,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
                       <label for="pending"> pending </label>
                       </p> </span>
                       <button class = "remove" > remove task from list </button>
-                      <br>
                       `;
     li.innerHTML = newTaskHTML
      document.querySelector('#tasks-list').append(li);
