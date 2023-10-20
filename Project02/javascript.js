@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#new-task").onsubmit = () => {
     const li = document.createElement('li');
     let taskText = document.querySelector('#task').value;
+    taskText.id = 'task-title';
     let taskPriority = document.querySelector('#task-priority').value;
     let newTaskHTML = `
                       <span> <p>task title: ${ taskText} </p> </span>
@@ -27,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
                       <button class = "remove" > remove task from list </button>
                       `;
     li.innerHTML = newTaskHTML
-    li.id = 'listItem';
      document.querySelector('#tasks-list').append(li);
      document.querySelector('#task').value = '';
      arrayOfTasks.push(li);
@@ -48,11 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('change', function(event){
     element = event.target;
       if(element.className === 'completed'){
-         element.innerHTML.style.textDecoration = "line-through";
-        
+         element.getElementById("task-title").style.textDecoration = "line-through";
       }
      if(element.className === 'pending'){
-         element.getElementById("listItem").style.textDecoration = "none";
+         element.getElementById("task-title").style.textDecoration = "none";
       }
   })
 
