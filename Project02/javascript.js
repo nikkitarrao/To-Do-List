@@ -42,16 +42,16 @@ document.addEventListener('DOMContentLoaded', function() {
           element.parentElement.remove();
           arrayOfTasks.splice(li);
       }
-    });
+    })
   
 //crossing our completed task
-if(document.querySelector('input[name = "task-status]')){
-  document.querySelectorAll('input[name = "task-status]').forEach(rb=>rb.addEventListener("change", function () 
-       element.getElementById("task-title").style.textDecoration = "line-through";                                                                                  
-                                                                                         )};
+//if(document.querySelector('input[name = "task-status]')){
+ // document.querySelectorAll('input[name = "task-status]').forEach(rb=>rb.addEventListener("change", function () 
+      // element.getElementById("task-title").style.textDecoration = "line-through";                                                                                  
+            //                                                                             )};
    
    
-   ('change', function(event){
+   //document.addEventListener('change', function(event){
    // element = event.target;
     //  if(element.className === 'completed'){
        //  element.getElementById("task-title").style.textDecoration = "line-through";
@@ -59,7 +59,7 @@ if(document.querySelector('input[name = "task-status]')){
   //   if(element.className === 'pending'){
       //   element.getElementById("task-title").style.textDecoration = "none";
    //   }
-
+//});
 
   
 });
