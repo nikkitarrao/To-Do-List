@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     taskText.id = 'task-title';
     let taskPriority = document.querySelector('#task-priority').value;
     let newTaskHTML = `
-                      <br>
                       <span> <p>task title: ${ taskText} </p> </span>
                       <span> <p> task priority level: ${ taskPriority} </p>  </span>
                       <span> <p> task status:
@@ -43,12 +42,16 @@ document.addEventListener('DOMContentLoaded', function() {
           element.parentElement.remove();
           arrayOfTasks.splice(li);
       }
-   if(element.className === 'completed'){
-         element.getElementById("task-title").style.textDecoration = "line-through";
-      }
-    })
+    });
+  
 //crossing our completed task
- // document.addEventListener('change', function(event){
+if(document.querySelector('input[name = "task-status]')){
+  document.querySelectorAll('input[name = "task-status]').forEach(rb=>rb.addEventListener("change", function () 
+       element.getElementById("task-title").style.textDecoration = "line-through";                                                                                  
+                                                                                         )};
+   
+   
+   ('change', function(event){
    // element = event.target;
     //  if(element.className === 'completed'){
        //  element.getElementById("task-title").style.textDecoration = "line-through";
@@ -56,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
   //   if(element.className === 'pending'){
       //   element.getElementById("task-title").style.textDecoration = "none";
    //   }
-//  })
 
 
   
