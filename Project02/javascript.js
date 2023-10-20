@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('click', function(event){
     element = event.target;
       if(element.className === 'completed'){
-         element.getElementById("listItem").style.textDecoration = "line-through";
+         element.innerHTML.style.textDecoration = "line-through";
         
       }
      if(element.className === 'pending'){
