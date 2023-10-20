@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#new-task").onsubmit = () => {
     const li = document.createElement('li');
     let taskText = document.querySelector('#task').value;
-    taskText.id = 'task-title';
+    taskText.id = 'task-title'
     let taskPriority = document.querySelector('#task-priority').value;
     let newTaskHTML = `
                       <span> <p>task title: ${ taskText} </p> </span>
