@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
                       <input type="radio" id="pending" name="task-status" value="pending" class="pending">
                       <label for="pending"> pending </label>
                       </p> </span>
-                      <br>
                       <button class = "remove" > remove task from list </button>
                       `;
     li.innerHTML = newTaskHTML
