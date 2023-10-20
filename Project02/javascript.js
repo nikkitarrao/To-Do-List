@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                       <label for="pending"> pending </label>
                       </p> </span>
                       <button class = "remove" > remove task from list </button>
+                      <br>
                       `;
     li.innerHTML = newTaskHTML
      document.querySelector('#tasks-list').append(li);
