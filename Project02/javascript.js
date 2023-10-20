@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let newTaskHTML = `
                       <span> <p>task title: ${ taskText} </p> </span>
                       <span> <p> task priority level: ${ taskPriority} </p>  </span>
-                      <span class = "task-center" >
+                      <span> <p> task status:
                       <input type="radio" id="completed" name="task-status" class="completed" value="completed">
                       <label for="comlpleted"> completed </label>
                       <input type="radio" id="pending" name="task-status" value="pending" class="pending">
                       <label for="pending"> pending </label>
-                      </span>
-
+                      </p> </span>
+                      <br>
                       <button class = "remove" > remove task from list </button>
                       `;
     li.innerHTML = newTaskHTML
