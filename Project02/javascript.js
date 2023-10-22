@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     })
    
-   
+//crossing a completed item out   
    document.addEventListener("change", function(event){
      element = event.target;
       if(element.className === 'completed'){
