@@ -43,21 +43,15 @@ document.addEventListener('DOMContentLoaded', function() {
           arrayOfTasks.splice(li);
       }
     })
-  
-//crossing our completed task
-//if(document.querySelector('input[name = "task-status]')){
- // document.querySelectorAll('input[name = "task-status]').forEach(rb=>rb.addEventListener("change", function () 
-      // element.getElementById("task-title").style.textDecoration = "line-through";                                                                                  
-            //                                                                             )};
    
    
    document.addEventListener("change", function(event){
      element = event.target;
       if(element.className === 'completed'){
-         element.getElementById("task-title").style.textDecoration = "line-through";
+         document.getElementById("task-title").style.textDecoration = "line-through";
       }
      if(element.className === 'pending'){
-         element.getElementById("task-title").style.textDecoration = "none";
+         document.getElementById("task-title").style.textDecoration = "none";
       }
 })
 
