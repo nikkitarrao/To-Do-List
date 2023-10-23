@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
    document.addEventListener("change", function(event){
      element = event.target;
       if(element.className === 'completed'){
-         //element.parentElement.style.textDecoration = "line-through";
-        document.querySelector('#task-title').style.textDecoration = "line-through";
+         element.parentElement.style.textDecoration = "line-through";
+       // document.querySelector('#task-title').style.textDecoration = "line-through";
       }
      if(element.className === 'pending'){
          element.parentElement.style.textDecoration = "none";
