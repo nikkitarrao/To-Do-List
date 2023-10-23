@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
      element = event.target;
       if(element.className === 'completed'){
          //element.parentElement.style.textDecoration = "line-through";
-        document.querySelector("#task-title").style.textDecoration = "line-through";
+        document.querySelector('#task').style.textDecoration = "line-through";
       }
      if(element.className === 'pending'){
          element.parentElement.style.textDecoration = "none";
