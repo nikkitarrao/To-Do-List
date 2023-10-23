@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
          element.parentElement.style.textDecoration = "line-through";
       }
      if(element.className === 'pending'){
-         document.getElementById("task-title").style.textDecoration = "none";
+         element.parentElement.style.textDecoration = "none";
       }
 })
 
