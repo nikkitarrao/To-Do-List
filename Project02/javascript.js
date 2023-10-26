@@ -13,10 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#new-task").onsubmit = () => {
     const li = document.createElement('li');
     let taskText = document.querySelector('#task').value;
-    taskText.id = 'task-title';
     let taskPriority = document.querySelector('#task-priority').value;
     let newTaskHTML = `
-                      <span> <p>task title: ${ taskText} </p> </span>
+                      <span> <p id = "task-title">task title: ${ taskText} </p> </span>
                       <span> <p> task priority level: ${ taskPriority} </p>  </span>
                       <span> <p> task status:
                       <input type="radio" id="completed" name="task-status" class="completed" value="completed">
@@ -48,11 +47,12 @@ document.addEventListener('DOMContentLoaded', function() {
    document.addEventListener("change", function(event){
      element = event.target;
       if(element.className === 'completed'){
-         element.parentElement.style.textDecoration = "line-through";
-       // document.querySelector('#task-title').style.textDecoration = "line-through";
+         //element.parentElement.style.textDecoration = "line-through";
+        document.querySelector('#task-title').style.textDecoration = "line-through";
       }
      if(element.className === 'pending'){
-         element.parentElement.style.textDecoration = "none";
+        // element.parentElement.style.textDecoration = "none";
+       document.querySelector('#task-title').style.textDecoration = "none";
       }
 })
 
