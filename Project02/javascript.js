@@ -36,3 +36,5 @@ document.addEventListener('DOMContentLoaded', function() {
    element = event.target;
       if(element.className === 'remove'){
           element.parentElement.remove();
+
+ }
