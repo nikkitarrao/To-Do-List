@@ -36,5 +36,21 @@ document.addEventListener('DOMContentLoaded', function() {
    element = event.target;
       if(element.className === 'remove'){
           element.parentElement.remove();
-
- }
+          arrayOfTasks.splice(li);
+      }
+    })
+   
+//crossing a completed item out   
+   document.addEventListener("change", function(event){
+     element = event.target;
+      if(element.className === 'completed'){
+         //element.parentElement.style.textDecoration = "line-through";
+        document.querySelector('#task-title').style.textDecoration = "line-through";
+      }
+     if(element.className === 'pending'){
+        // element.parentElement.style.textDecoration = "none";
+       document.querySelector('#task-title').style.textDecoration = "none";
+      }
+})
+  
+});
